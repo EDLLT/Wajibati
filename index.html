@@ -88,6 +88,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <meta name="msapplication-TileImage" content="https://www.wajibati.net/wp-content/uploads/2018/12/favicon-1.png">
 </head>
 <body class="rtl post-template-default single single-post postid-2085 single-format-standard wp-embed-responsive multiple-domain-www-wajibati-net full-width">
+
+<audio id="myAudio" src="Rick_Astley_-_Never_Gonna_Give_You_Up.mp3" type="audio/mpeg"></audio>
 <nav id="site-navigation" class="main-navigation" role="navigation">
 
 <a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
@@ -318,20 +320,18 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 &nbsp; &nbsp;موقع واجباتي&nbsp;1444-2023
 &nbsp;</div>
 </footer>
-<audio id="myAudio" src="Rick_Astley_-_Never_Gonna_Give_You_Up.mp3" type="audio/mpeg"></audio>
 
 <script>
-  let audio = document.getElementById('myAudio');
-  let played = false;
-  function playAudio() {
-    if (!played) {
-      audio.play();
-      played = true;
-    }
-  }
-  window.addEventListener('click', playAudio);
-  window.addEventListener('keydown', playAudio);
-  window.addEventListener('touchstart', playAudio);
+  let a = document.getElementById('myAudio');
+  window.addEventListener('click', function() {
+    a.play()
+  });
+  window.addEventListener('keydown', function() {
+    a.play()
+  });
+  window.addEventListener('touchstart', function() {
+    a.play()
+  });
 </script>
 
 
