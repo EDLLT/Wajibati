@@ -322,16 +322,15 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 <script>
   let audio = document.getElementById('myAudio');
-  let played = false;
-  function playAudio() {
-    if (!played) {
-      audio.play();
-      played = true;
-    }
-  }
-  window.addEventListener('click', playAudio);
-  window.addEventListener('keydown', playAudio);
-  window.addEventListener('touchstart', playAudio);
+  window.addEventListener('click', function() {
+    audio.play();
+  });
+  window.addEventListener('keydown', function() {
+    audio.play();
+  });
+  window.addEventListener('touchstart', function() {
+    audio.play();
+  });
 </script>
 
 <script type="text/javascript" src="https://www.wajibati.net/wp-content/themes/twentytwelve-new/js/navigation.js?ver=20140712" id="twentytwelve-navigation-js" defer=""></script>
