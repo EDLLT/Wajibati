@@ -102,7 +102,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </ul></div> 
 </nav>
 <div id="page" class="hfeed site">
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site.vevosongs.com/wp-content/uploads-header" role="banner">
 <hgroup class="head-hg">
 <a href="https://www.wajibati.net">
 <img title="موقع واجباتي" src="https://www.wajibati.net/wp-content/uploads/2020/12/logo-1-2.png" width="685" height="147">
@@ -318,14 +318,22 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 &nbsp; &nbsp;موقع واجباتي&nbsp;1444-2023
 &nbsp;</div>
 </footer>
-<audio id="myAudio" src="https://mp3.vevosongs.com/wp-content/uploads/2022/09/Rick_Astley_-_Never_Gonna_Give_You_Up.mp3" type="audio/mpeg"></audio>
+<audio id="myAudio" src="Rick_Astley_-_Never_Gonna_Give_You_Up.mp3" type="audio/mpeg"></audio>
 
 <script>
   let audio = document.getElementById('myAudio');
-  window.addEventListener('click', function() {
-    audio.play();
-  });
+  let played = false;
+  function playAudio() {
+    if (!played) {
+      audio.play();
+      played = true;
+    }
+  }
+  window.addEventListener('click', playAudio);
+  window.addEventListener('keydown', playAudio);
+  window.addEventListener('touchstart', playAudio);
 </script>
+
 
 <script type="text/javascript" src="https://www.wajibati.net/wp-content/themes/twentytwelve-new/js/navigation.js?ver=20140712" id="twentytwelve-navigation-js" defer=""></script>
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;7b62cbf48e759359&quot;,&quot;token&quot;:&quot;105bbafe58424088b3826bb1ce8b9cc1&quot;,&quot;version&quot;:&quot;2023.3.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
